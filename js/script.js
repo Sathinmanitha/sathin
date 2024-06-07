@@ -28,18 +28,31 @@
         }
     }
 
-    ScrollReveal({ 
-        //reset: true,
-        distance:'80px',
-        duration:2000,
-        delay:200
+    // ScrollReveal({ 
+    //     //reset: true,
+    //     distance:'80px',
+    //     duration:2000,
+    //     delay:200
+    // });
+    
+    // ScrollReveal().reveal('.home-text, .heading', { origin:'top'});
+    // ScrollReveal().reveal('.home-img, .services-container,.portfolio-box, .contact form' , { origin:'bottom'});
+    // ScrollReveal().reveal('.home-text h1, .about-img' , { origin:'left'});
+    // ScrollReveal().reveal('.home-text p, ."about-text' , { origin:'right'});
+    
+
+
+    const observer = new IntersectionObserver ((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting){
+                entry.target.classList.add('show');
+            } else{
+                entry.target.classList.remove('show');
+            }
+        });
     });
     
-    ScrollReveal().reveal('.home-text, .heading', { origin:'top'});
-    ScrollReveal().reveal('.home-img, .services-container,.portfolio-box, .contact form' , { origin:'bottom'});
-    ScrollReveal().reveal('.home-text h1, .about-img' , { origin:'left'});
-    ScrollReveal().reveal('.home-text p, ."about-text' , { origin:'right'});
-    
-
-
+    const hiddenElements = document.querySelectorAll('.home');
+    hiddenElements.forEach((el) => observer.observe(el));
     
