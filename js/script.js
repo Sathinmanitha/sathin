@@ -55,4 +55,8 @@
     
     const hiddenElements = document.querySelectorAll('.home');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    const aboutElements = document.querySelectorAll('.about');
+    aboutElements.forEach((el) => observer.observe(el));
+    
     

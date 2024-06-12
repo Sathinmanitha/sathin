@@ -30,6 +30,7 @@ body.active {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 *::selection {
   color: var(--bg-color);
@@ -181,7 +182,6 @@ header.shadow {
   background: var(--hover);
 }
 
-
 .container{
   width: auto;
   height: auto;
@@ -193,26 +193,24 @@ header.shadow {
   font-size: 4rem;
   font-weight: 800;
 }
-/*
-.home-text .text{
-  font-size: 1.2rem;
-  letter-spacing: 10px;
-  font-family: monospace;
-  border-right: 5px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;   
-  animation: typing 2s,
-  cursor .4s step-end infinite alternate;
+
+.about{
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(100%);
 }
 
-@keyframes cursor {
-  50% {border-color: transparent;}
+@media(prefers-reduced-motion){
+  .about{
+    transition: none;
+  }
 }
 
-@keyframes typing {
-  from {width: 0;}
-}*/
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 .about-container {
   display: grid;
