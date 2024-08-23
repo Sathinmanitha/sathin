@@ -27,7 +27,7 @@ body.dark-mode {
 }
 
 
-i{
+/* i{
   position: absolute;
   width: 6px;
   height: 6px;
@@ -46,7 +46,7 @@ i{
     opacity: 0;
     transform: translate(var(--x), var(--y));
   }
-}
+} */
 
 header {
   padding: 10px 20px;
