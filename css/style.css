@@ -1389,6 +1389,128 @@ body.dark-mode footer{
 
 
 
+@media (min-width: 1920px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-left: 60px;
+  }
+
+  nav ul {
+    margin-right: 90px;
+  }
+
+  nav ul li a{
+    font-size: 1.3rem;
+  }
+
+  .social-links {
+    width: 270px;
+    height: 90px;
+    border-radius: 50px;
+  }
+
+  .social-links a img{
+    width: 55px;
+    height: 55px;
+  }
+
+  #home{
+    margin-top: 80px;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .home-content h2 {
+    font-size: 4.2rem;
+  }
+
+  .home-content h3 {
+    color: transparent;
+    font-size: 4.2rem;
+  }
+  
+  .home-content p {
+    width: 750px;
+    color: #515151;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  .profile-picture img {
+    width: 740px;
+    height: 740px;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h2 {
+    font-size: 5rem;
+  }
+
+  .home-content h3 {
+    font-size: 5rem;
+    -webkit-text-stroke: 5px #0085FF;
+  }
+
+  .home-content p {
+    width: 800px;
+    font-size: 1.3rem;
+  }
+
+  .social-links {
+    width: 350px;
+    justify-content: center;
+  }
+
+  .service-box,
+  .portfolio-box,
+  .skills-box {
+    width: 400px;
+  }
+
+  .skills-box {
+    width: 300px;
+    height: auto;
+  }
+
+  .skills-box img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-center h1 {
+    font-size: 3rem;
+  }
+
+  .text-center h2 {
+    font-size: 1.5rem;
+  }
+
+  .education-item {
+    width: 700px;
+  }
+
+  .education-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .education-item p, .education-item .school-text {
+    font-size: 1.2rem;
+  }
+}
+
+
+
 
 
 
